@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: #1f2936;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    background-color: #1f2936;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #686f76;
+}
+
+li {
+    display: inline;
+    margin: 2px 3px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-item {
+    flex: 1;
+    text-align: center;
+}
