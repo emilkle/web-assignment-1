@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -6,21 +12,37 @@ body {
 header {
     background-color: #1f2936;
     padding: 20px;
-    text-align: center;
     color: white;
+    width: 100vw;
+}
+
+main {
+    border-top: 1px solid #686f76;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
 }
 
 ul {
     background-color: #1f2936;
     padding: 20px;
-    margin: 0 auto 0 auto;
     text-align: center;
     color: white;
-    border-bottom: 1px solid #686f76;
 }
 
 li {
     display: inline;
+    text-align: center;
     margin: 2px 3px;
 }
 
@@ -34,12 +56,51 @@ a:hover {
 }
 
 .grid-container {
-    margin-top: 50px;
+    background-color: #1f2936;
     display: flex;
-    justify-content: space-between;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-right: auto;
 }
 
 .grid-item {
-    flex: 1;
+    background-color: #1f2936;
+    padding: 20px;
+    text-align: -moz-left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.grid-item img {
+    width: auto;
+    height: auto;
+    object-fit: scale-down;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid #1f2936;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #1f2936;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+    color: white;
 }
