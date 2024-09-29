@@ -55,7 +55,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.grid-container {
+.top-grid-container {
     background-color: #1f2936;
     display: flex;
     text-align: left;
@@ -95,6 +95,66 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
+}
+
+.bottom-grid-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.box {
+    border-radius: 10px;
+    border: dodgerblue 3px solid;
+    width: 250px;
+    height: 150px;
+}
+
+.top-row, .bottom-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.text {
+    color: black;
+    text-align: left;
+    padding: 10px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.quote {
+    color: black;
+    text-align: center;
+    padding: 50px;
+    flex-grow: 1;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #e4e5ea;
+    width: 100vw;
+}
+
+.bottom-info-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #3782f5;
+    flex-direction: row;
+    border: 50px;
+    padding: 30px;
+}
+
+.bottom-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bottom-button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 footer {
