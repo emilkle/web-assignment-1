@@ -1,13 +1,10 @@
+/*
 * {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 
 header {
     background-color: #1f2936;
@@ -25,13 +22,7 @@ main {
     text-align: center;
 }
 
-.center-align {
-    text-align: center;
-}
 
-.left-align {
-    text-align: left;
-}
 
 ul {
     background-color: #1f2936;
@@ -53,6 +44,14 @@ a {
 
 a:hover {
     text-decoration: underline;
+}*/
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
 }
 
 .top-grid-container {
@@ -137,30 +136,34 @@ button {
 }
 
 .bottom-info-div {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
     background-color: #3782f5;
+    display: flex;
     flex-direction: row;
-    border: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3782f5;
+    border-radius: 5px;
     padding: 30px;
-}
-
-.bottom-info-column {
-    display: flex;
-    flex-direction: column;
+    width: 700px;
     gap: 50px;
 }
 
-.bottom-button-column {
+.bottom-info-column, .bottom-button-column{
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+    justify-content: space-around;
 }
 
-footer {
-    background-color: #1f2936;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid white;
+.bottom-button {
+    background-color: dodgerblue;
     color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
 }
