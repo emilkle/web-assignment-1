@@ -1,0 +1,26 @@
+.search-form {
+    align-items: center;
+    display: flex;
+}
+
+.weather-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.weather-search {
+    background-color: #e4e5ea;
+    margin-left: 30px;
+    color: black;
+}
+
+article {
+    color: black;
+}
+
+
+
