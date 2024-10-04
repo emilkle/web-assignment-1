@@ -29,26 +29,26 @@ function fetchPosts() {
         .then((posts) => {
             // Log the fetched posts
             console.log(`Fetched ${posts.length} posts from page ${currentPage}`);
-            let container = document.getElementById("posts-container");
+            let postsContainer = document.getElementById("posts-container");
 
 
             // Clear the container if the current page is 1
             if (currentPage === 1) {
-                container.innerHTML = "";
+                postsContainer.innerHTML = "";
             }
 
             // Append the fetched posts to the container
             let i = 1;
-            for (post of posts) {
+            for (let post of posts) {
                 const apiPost = document.createElement("div");
                 apiPost.classList.add("post");
-                const title = document.createElement("h1");
-                title.textContent = post.title;
-                const body = document.createElement("p");
-                body.textContent = post.body;
-                apiPost.appendChild(title);
-                apiPost.appendChild(body);
-                container.appendChild(apiPost);
+                const postTitle = document.createElement("h1");
+                postTitle.textContent = post.title;
+                const postBody = document.createElement("p");
+                postBody.textContent = post.body;
+                apiPost.appendChild(postTitle);
+                apiPost.appendChild(postBody);
+                postsContainer.appendChild(apiPost);
                 i++;
             }
             isFetching = false;
