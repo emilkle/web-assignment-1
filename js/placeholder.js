@@ -13,6 +13,8 @@ window.addEventListener("scroll", () => {
 
 /**
  * Fetches posts from the API
+ *
+ * Based on code given by TA: Akif Quddus Khan in the lecture on monday 30th September 2024.
  */
 function fetchPosts() {
     // Check if the function is already fetching posts
